@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Quest, XpEvent, Purchase, AreaId } from './types';
 import { STARTER_QUESTS } from './data';
 
-const uid = () => `${Date.now()}-${Math.floor(Math.random() * 1e6)}`;
+export const uid = () => `${Date.now()}-${Math.floor(Math.random() * 1e6)}`;
 
 interface LifeState {
   xp: number;
